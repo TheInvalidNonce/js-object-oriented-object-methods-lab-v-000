@@ -1,11 +1,11 @@
-function BoardMember(name, homeState, training) {
+const BoardMember = function (name, homeState, training) {
   this.name = name
   this.homeState = homeState
   this.training = training
   
-  const veto = this. ( () {
+  this.veto = function () {
     return 'No, I must disagree'
-  })
+  }
   
   this.approve = function () {
     return 'You can do that!'
